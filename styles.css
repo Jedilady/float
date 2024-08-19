@@ -1,0 +1,22 @@
+.contenedor {
+    background-color: antiquewhite;
+    height: 500px;
+}
+
+.item, a {
+    width: 50px;
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid #000;
+    display: block;
+}
+
+.color1 {
+    background-color: red;
+}
+.color2 {
+    background-color: blue;
+}
+.color3 {
+    background-color: green;
+}
