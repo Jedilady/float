@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255)
 }
 
 .contenedor {
@@ -39,7 +39,7 @@ body{
 }
 img {
     float: right;
-    margin: 10px;
+    /*margin: 10px;*/
 }
 .wrapper:after {
     content: "";
@@ -47,6 +47,11 @@ img {
     clear: both;
 }
 
+.servicios:after {
+    content: "";
+    display: block;
+    clear: both;
+}
 .servicio h2, .servicio p {
     color: #999;
     margin: 10px 0;
@@ -65,5 +70,15 @@ img {
 .contenido {
     padding: 10px;
     background-color: #ccc;
+    clear: both;
+    margin-top: 5px;
+}
+
+section, aside {
+    float: left;
+    width: 46%;
+    margin: 1%;
+    padding: 1%;
+    background-color: #f2f2f2;
 }
 
