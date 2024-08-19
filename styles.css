@@ -69,9 +69,19 @@ img {
 
 .contenido {
     padding: 10px;
-    background-color: #ccc;
+    /*background-color: #ccc;*/
     clear: both;
     margin-top: 5px;
+}
+
+.contenido p {
+    column-count: 3;
+    -webkit-column-count: 3;
+    column-gap: 50px;
+    -webkit-column-gap: 50px;
+    column-rule: 1px solid #ccc;
+    -webkit-column-rule: 1px solid #ccc;
+    text-align: justify;
 }
 
 section, aside {
@@ -82,3 +92,8 @@ section, aside {
     background-color: #f2f2f2;
 }
 
+.columnas {
+    content: "";
+    display: block;
+    clear: both;
+}
