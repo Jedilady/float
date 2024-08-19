@@ -77,8 +77,8 @@ img {
 }
 
 .servicio {
-    float: left;
-    background-color: #eee;
+    /* float: left; */
+    /* background-color: #eee; */
     width: 29.33%;
     margin: 1%;
     padding: 1%;
@@ -88,6 +88,7 @@ img {
 
 .servicio:nth-child(1) {
     top: 10px;
+    position: sticky; /*Funciona SOLAMENTE dentro del parent. Ergo, para que funcione siempre en el body, es necesario que sea un div hijo directo del body*/
 }
 
 .servicio:nth-child(2) {
@@ -136,7 +137,9 @@ nav {
     padding: 5px;
     height: 100px;
     margin: 10px 0;
-    position: fixed;
+    position: sticky; /*Instead of fixed: cumple la misma función en este caso, mantener el elemento pegado al tope, y visible al hacer scroll, pero requiere menos cómputo*/
+    top: 0;
+    z-index: 1;/* no hacía falta cuando el nav estaba al final del HTML, pero por razones de  accesibilidad, es preferible que esté arriba*/
 }
 
 nav ul::after {
