@@ -41,10 +41,15 @@ img {
     float: right;
     /*margin: 10px;*/
 }
-.wrapper:after {
+.wrapper:after { /* Con esto nos evitamos tener que crear un div vacío para hacer el clear! Crea un "div" posterior, contenido vacío, con el clear, y nos ahorramos código innecesario */
     content: "";
     display: block;
     clear: both;
+}
+
+#banner {
+    max-height: 300px;
+    overflow: hidden;/*Aquí, lo que se desberde de la imagen de la altura, se esconde*/
 }
 
 .servicios:after {
@@ -65,6 +70,19 @@ img {
     margin: 1%;
     padding: 1%;
     height: 150px;
+    position: relative;
+}
+
+.servicio:nth-child(1) {
+    top: 10px;
+}
+
+.servicio:nth-child(2) {
+    top: 15px;
+}
+
+.servicio:nth-child(3) {
+    top: 25px;
 }
 
 .contenido {
@@ -72,6 +90,8 @@ img {
     /*background-color: #ccc;*/
     clear: both;
     margin-top: 5px;
+    /*position: relative;*/
+    left: 50px; /* NO FUNCIONA sin el position relative!*/
 }
 
 .contenido p {
